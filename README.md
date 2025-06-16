@@ -22,5 +22,5 @@ This frontend provides a way to upload the files to a dufs server with chunking 
 4. open `http://localhost:5000` in your browser
 
 ## TODO
-- [] Customize chunk size
-- [] More customization
+- [ ] Customize chunk size
+- [ ] More customization
