@@ -24,3 +24,9 @@ This frontend provides a way to upload the files to a dufs server with chunking 
 ## TODO
 - [ ] Customize chunk size
 - [ ] More customization
+
+## License
+This project is licensed under the Mozilla Public License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+This project is based on [dufs](https://github.com/sigoden/dufs), which is licensed under [MIT License](https://raw.githubusercontent.com/sigoden/dufs/refs/heads/main/LICENSE-MIT) or [Apache License 2.0](https://raw.githubusercontent.com/sigoden/dufs/refs/heads/main/LICENSE-APACHE).
+
