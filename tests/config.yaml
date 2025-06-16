@@ -1,0 +1,14 @@
+serve-path: './files'
+bind: 127.0.0.1
+port: 5000
+hidden:
+  - '.*'
+  - tmp
+  - '*.log'
+  - '*.lock'
+allow-all: true
+enable-cors: false
+render-index: true
+render-try-index: true
+render-spa: true
+assets: ../assets/
