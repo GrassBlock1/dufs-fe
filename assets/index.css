@@ -270,6 +270,12 @@ body {
   border-radius: 3px;
 }
 
+footer {
+  padding: 1em;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 @media (min-width: 768px) {
   .path a {
     min-width: 400px;
