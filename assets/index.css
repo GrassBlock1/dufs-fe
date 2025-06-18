@@ -250,6 +250,26 @@ body {
   cursor: pointer;
 }
 
+.settings-bar {
+  padding: 0 1rem;
+}
+.settings-bar summary {
+  margin: 0.5rem 0;
+}
+
+.chunk-size-setting {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.chunk-size-setting input {
+  width: 60px;
+  padding: 0.2em;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+}
+
 @media (min-width: 768px) {
   .path a {
     min-width: 400px;
@@ -305,3 +325,4 @@ body {
     color: white;
   }
 }
+
