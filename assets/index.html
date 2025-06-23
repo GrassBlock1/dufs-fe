@@ -127,6 +127,7 @@
     </div>
   </div>
   <template id="index-data">__INDEX_DATA__</template>
+  <div id="readme-content"></div>
   <details class="settings-bar">
     <summary>Settings</summary>
       <b>Upload settings</b>
@@ -139,6 +140,23 @@
     <span>Powered by <a href="https://github.com/sigoden/dufs" target="_blank" rel="noopener noreferrer">dufs</a></span>
   </footer>
   <script src="__ASSETS_PREFIX__index.js"></script>
+  <script src="__ASSETS_PREFIX__marked.min.js"></script>
+  <script defer>
+    fetch('./README.md')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('README.md not found');
+        }
+        return response.text();
+      })
+      .then(content => {
+        document.getElementById('readme-content').innerHTML = marked.parse(content);
+      })
+      .catch(error => {
+        console.error('Error loading README:', error);
+        document.getElementById('readme-content').innerHTML = '<p>Failed to load README</p>';
+      });
+  </script>
 </body>
 
 </html>

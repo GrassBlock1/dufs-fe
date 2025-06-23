@@ -276,6 +276,10 @@ footer {
   font-size: 0.8rem;
 }
 
+#readme-content {
+  padding: 1rem;
+}
+
 @media (min-width: 768px) {
   .path a {
     min-width: 400px;
